@@ -218,7 +218,16 @@ function receiveManager(opt = []) {
 
 export { receiveManager };
 
+//Page reload with a pop up picture
 
+
+
+// var preloader= document.getElementById("loading");
+// $(document).ready(function(){
+//   setTimeout(function(){
+//     $(#popUp);
+//   }, 5000);
+// });
 
 
 

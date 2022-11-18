@@ -1,0 +1,57 @@
+<html lang="en">
+<head>
+    <title>Inheritance2</title>
+</head>
+<body>
+    <script>
+
+        // var Employee =function (){
+        //    this.name ="sakshi";
+        //    this.age = 22;
+        //    this.gender = "female";
+
+        // };
+         function Employee(){
+           this.name ="";
+           this.age = 0;
+           this.gender = "";
+
+           let salary=100000.00;
+
+           let calculateSalary =function(){
+            return salary + 30000.00;
+           }
+
+           this.getSalary = function(){
+            //console.log("this is sakshi.my salary is 30000");
+            //return salary;
+            let salary=calculateSalary();
+             return calculateSalary();
+           };
+
+        };
+
+        let employee1 = new Employee();
+        let employee2 = new Employee();
+
+        // console.log(employee.name)
+
+        employee1.name= "sakshi";
+        employee1.age="22";
+        employee1.gender="female";
+
+
+        employee2.name="nikita";
+        employee2.age=23;
+        employee2.gender="female";
+
+
+
+        ///CODE PENDING///
+
+
+
+        
+    </script>
+</body>
+</html>

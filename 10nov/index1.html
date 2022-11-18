@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Inheritance</title>
+</head>
+<body>
+    <h1>Inheritance</h1>
+    <script>
+    var name="sakshi";
+    var salary = 15000.00;
+    var isActive=true;
+    var person ={name : "sakshi",age : 22};
+    var skills=["java","javascript","html"];
+    var status =null;
+    var Company={};
+    var licence={};
+    var Customersakshi={};
+    var Customerabhishek={};
+    var Customerharsh={};
+    var item={};
+    var order={};
+
+    licence ={
+        licenceNo:"od70472837435786d",
+        dateofIssued:"12/11/22",
+        isActive : true
+    }
+    company = {
+        name : "Shopper stop",
+        incorporationYear : 2000,
+        numberOfBranchs : 50,
+
+        licence :{
+        licenceNo:"od70472837435786d",
+        dateofIssued:"12/11/22",
+        isActive : true
+    },
+        // licence : licence,
+
+        // Customer:["sakshi","harsh","ankit"]
+        customers : [{
+            name : "abhishek",
+        type : "registered",
+        resisteredDate : null
+        },
+        {
+            name : "sakshi",
+        type : "regular",
+        resisteredDate : null
+
+        },
+        {
+            name : "harsh",
+        type : "regular",
+        resisteredDate : null
+        }
+    ]
+        //Customer:[Customersakshi.Customerabhishek]
+    };
+
+     Customersakshi={
+        name : "abhishek",
+        type : "registered",
+        resisteredDate : null
+    };
+
+     Customerabhishek={
+        name : "sakshi",
+        type : "regular",
+        resisteredDate : null
+    };
+    Customerharsh={
+        name : "harsh",
+        type : "regular",
+        resisteredDate : null
+    };
+     
+    for(var i=0;i<company.customers.length;i++)
+    {
+        console.log(company.customers[i].name);
+    }
+    console.log(i);
+
+    </script>
+</body>
+</html>
