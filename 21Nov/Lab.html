@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <title>Calculator</title>
+    </head>
+    <body>
+        <div style="box-shadow: 1px 2px 6px 4px; padding: 5px 4px 2px 4px; margin-left: 30%; margin-top: 8%; margin-right: 30%;">
+            <fieldset style=" text-align: center;" >
+                <legend>Calculator Demo Using Arrow Function:</legend>
+                <br>
+                <label >Enter Number 1: </label> <input type="text" id="num1" ><br><br>
+                <label >Enter Number 2: </label>   <input type="text" id="num2" ><br> <br>
+                <br>
+                <button onclick="add()">Add</button>  <button onclick="sub()">Substraction</button> 
+                <button onclick="multi()">Multiplication</button>   <button onclick="div()">Division</button>
+                <br>
+                <div id="print"></div>
+            </fieldset> 
+        </div>
+    </body>
+
+    <script>
+        function add(){
+            var c;
+            a=document.getElementById("num1").value;
+            b=document.getElementById("num2").value;
+
+             c=parseInt(a)+parseInt(b);
+             document.getElementById('print').innerHTML = "Sum is : "+c;
+        }
+
+        function sub(){
+            var c;
+            a=document.getElementById("num1").value;
+            b=document.getElementById("num2").value;
+
+             c=parseInt(a-b);
+             document.getElementById('print').innerHTML = "Subastrsct is : "+c;
+        }
+
+        function multi(){
+            var c;
+            a=document.getElementById("num1").value;
+            b=document.getElementById("num2").value;
+
+             c=parseInt(a)*parseInt(b);
+             document.getElementById('print').innerHTML = "Multiplication is : "+c;
+        }
+
+        function div(){
+            var c;
+            a=document.getElementById("num1").value;
+            b=document.getElementById("num2").value;
+
+             c=parseInt(a)/parseInt(b);
+             document.getElementById('print').innerHTML = "Divid  is : "+c;
+        }
+    </script>
+</html>

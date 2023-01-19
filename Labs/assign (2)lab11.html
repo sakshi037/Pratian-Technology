@@ -1,0 +1,97 @@
+<html>
+    <title>
+        Assessment 1-2
+    </title>
+    <body>
+        <h2>Assessment-2(Lab 11</h2>
+    <h3>Check console</h3>
+    <script>
+       
+
+console.log("Assessment 2 OO Using Javascript");
+
+class Items{
+    constructor(itemId, name, description, price){
+        this.itemId = itemId;
+        this.name = name;
+        this.description = description;
+        this.price = price;
+    }
+}
+//defining 4 items with details
+const item1 = new Items(101, "Bag", "Leather laptop bag", 500);
+const item2 = new Items(102, "Books", "Secret of JavaScript", 1000);
+const item3 = new Items(103, "Pen", "Reynolds Ball pen", 200);
+const item4 = new Items(104, "Box", "Tressure Box", 100);
+
+// orderitem1 contain 3 item1 ie 3 bag
+orderitem1 = {
+    item: [item1, item1, item1],
+    total1: (item1.price)*3
+}
+// orderitem2 contain 4 item2 ie 4 bags
+orderitem2 = {
+    item: [item2, item2, item2, item2],
+    total2: (item2.price)*4
+}
+// combining orderitem1 and orderitem2
+order1 = {
+    order1: orderitem1,
+    order2: orderitem2,
+    t1: orderitem1.total1+orderitem2.total2
+}
+
+// orderitem3 contain 4 item3 ie 4 pen
+orderitem3 = {
+    item: [item3, item3, item3, item3],
+    total3: (item3.price)*4
+}
+// orderitem4 contain 5 item4 ie 5 box
+orderitem4 = {
+    item: [item4, item4, item4, item4, item4],
+    total4: (item4.price)*5
+}
+// combining orderitem3 and orderitem4
+order2 = {
+    order1: orderitem3,
+    order2: orderitem4,
+    t2: orderitem3.total3+orderitem4.total4
+}
+
+
+//customer 1 with order 1
+customer1 = {
+    name: "Shaurya",
+    type: "Regular",
+    disount: "0%",
+    order: order1,
+    bill1: order1.t1
+}
+
+//customer 2 with order 2
+customer2 = {
+    name: "Agnihotri",
+    type: "Registered",
+    disount: "10%",
+    order: order2,
+    bill2: (order2.t2)-(order2.t2)*0.1
+}
+
+// company defined item and order added with customer details also
+company = {
+    name: "Amazon",
+    type: "Restaurant",
+    item1: item1,
+    item2: item2,
+    item3: item3,
+    item4: item4,
+    customer1: customer1,
+    customer2: customer2
+}
+
+console.log(company)
+
+// Assessmetn 1 and 2 completed 
+    </script>
+</body>
+</html>
